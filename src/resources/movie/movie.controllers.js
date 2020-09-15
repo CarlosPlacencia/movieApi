@@ -62,7 +62,6 @@ export const filter = async (req, res) => {
     // execute the query
     try{
         results.results = await query.exec();
-        console.log(results)
         res.status(200).json({results})
         
     } catch (e) {
